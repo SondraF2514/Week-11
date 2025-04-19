@@ -1,0 +1,23 @@
+{
+  "name": "week-11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Week 11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SondraF2514/Week-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SondraF2514/Week-11/issues"
+  },
+  "homepage": "https://github.com/SondraF2514/Week-11#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "jquery": "^3.7.1"
+  }
+}

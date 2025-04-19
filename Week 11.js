@@ -84,7 +84,7 @@ const checkOutcomes = () =>{
     checkWinner(currentPlayer, ...winningOutcomes[6]);
     checkWinner(currentPlayer, ...winningOutcomes[7]);
 
-    if (turn ===9 && winner=== fasle){
+    if (turn ===9 && winner=== false){
         endGame();
         $('alertDraw').show();
     }
@@ -133,7 +133,7 @@ const startGame =() => {
 
     })
 }
-
+console.log("saveloaded")
 document.getElementById('startBtn').addEventListener('click', ()=> startGame());
 
 document.getElementById('resetBtn').addEventListener('click', ()=> document.location.reload(true));
