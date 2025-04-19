@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" 
+    crossorigin="anonymous">
+
+</head>
+
+<body class="bg-secondary">
+  <!---Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
+    Create a Tic-Tac-Toe game grid using your HTML element of choice.
+    When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
+    A heading should say whether it is X's or O's turn and change with each move made.
+    A button should be available to clear the grid and restart the game.
+    When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner.
+
+  
+  --> 
+    <div id="header" class="container text-center p-3">
+
+        <div class="row">
+            <div class="col pt-2"></div>
+            <div class="col pt-2">
+                <img src = "https://bootcamprankings.com/wp-content/uploads/2019/11/52410475_383432249178531_1250303471362506752_n.png" alt="Promineo Tech" width="90"> 
+            </div>
+            <div class="col pt-2"></div>
+        </div>
+
+        <div class="row pt-2">
+            <div class="col">
+                <h1 class="m-3">Tic-Tac-Toe</h1>
+            </div>
+        </div>
+
+        <div class="row pt-2">
+            <div id="p1" class ="col fs-2">Player 1 - X</div>
+            <div class ="col fs-2"></div>
+            <div id="p2" class ="col fs-2">Player 2 - O</div>
+        </div>
+
+
+    </div>
+<!--ALERT POP UP-->
+<div id="alert--container">
+
+    <div id="alertStart" class="alert alert-info" text-center m-0 ms-5 me-5 fs-3 role="alert">
+        Player 1 Start! 
+    </div>
+
+    <div id="alertWinner" class="alert alert-info" text-center m-0 ms-5 me-5 fs-3role="alert">
+    
+    </div> 
+
+    <div id="alertDraw" class="alert alert-info" text-center m-0 ms-5 me-5 fs-3role="alert">
+        GAME OVER! It's a DRAW!
+    </div>
+</div>
+
+
+<!---GRID-->
+<div class="container m-auto p-3 g-5">
+
+    <div id="grid" class="container-outline-light m-auto p-0 bd-dark
+    text-info text-center align-middle border border-info">
+
+        <div class="row fs-1 g-0">
+            <div id="box0" class="box col p-3 border border info"></div>
+            <div id="box1" class="box col p-3 border border info"></div>
+            <div id="box2" class="box col p-3 border border info"></div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div id="box3" class="box col p-3 border border info"></div>
+            <div id="box4" class="box col p-3 border border info"></div>
+            <div id="box5" class="box col p-3 border border info"></div>
+        </div>
+        <div class="row fs-1 g-0">
+            <div id="box6" class="box col p-3 border border info"></div>
+            <div id="box7" class="box col p-3 border border info"></div>
+            <div id="box8" class="box col p-3 border border info"></div>
+        </div>
+        
+    </div>
+</div>
+
+<!--BUTTONS-->
+<div class="d-grid col-2 gap-3 mx-auto pt 4">
+<button id="startBtn" type="button" class="btn btn-info btn-lg">START</button>
+<button id="resettBtn" type="button" class="btn btn-dark btn-lg">RESET</button>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" 
+crossorigin="anonymous"></script>
+
+
+</body>
+</html>
